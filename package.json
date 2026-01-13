@@ -1,0 +1,36 @@
+{
+  "name": "chat-application",
+  "version": "1.0.0",
+  "description": "Create a Chat Application",
+  "homepage": "https://github.com/sharearahammed/chat-application-using-nodeJS#readme",
+  "bugs": {
+    "url": "https://github.com/sharearahammed/chat-application-using-nodeJS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharearahammed/chat-application-using-nodeJS.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon app.js",
+    "prod": "cross-env NODE_ENV=production node app.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1",
+    "http-errors": "^2.0.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.1.3",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0"
+  }
+}
