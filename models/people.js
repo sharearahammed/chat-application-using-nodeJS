@@ -1,26 +1,25 @@
-const { lowerCase } = require("lodash");
 const mongoose = require("mongoose");
 
 const peopleSchema = mongoose.Schema(
   {
     name: {
       type: String,
-      require: true,
+      required: true,
       trim: true,
     },
     email: {
       type: String,
-      require: true,
+      required: true,
       trim: true,
-      lowerCase: true,
+      lowercase: true,
     },
     mobile: {
       type: String,
-      require: true,
+      required: true,
     },
     password: {
       type: String,
-      require: true,
+      required: true,
     },
     avatar: {
       type: String,
@@ -32,7 +31,7 @@ const peopleSchema = mongoose.Schema(
     },
   },
   {
-    timestamp: true,
+    timestamps: true,
   }
 );
 
